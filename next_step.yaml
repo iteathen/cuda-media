@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-02",
+  "status": "architecture_owner_bootstrap",
+  "objective": "Keep reusable media semantics separate from generic Tensor math, CUDA provider mechanics and product rendering/model policy.",
+  "authority": ["AGENTS.md", "docs/PROJECT_CHARTER.md", "docs/decisions/ADR-0001-independent-media-semantic-owner.md"],
+  "current_focus": {"issue": 3, "status": "not_activated", "next_action": "After bootstrap integration, select either a concrete image or video consumer profile; implementation still requires an accepted bounded spec."},
+  "parallel_governance": {"issue": 2, "status": "blocked_on_control_plane_mutation"},
+  "do_not": ["implement raw media-provider bindings here", "move generic Tensor math into media", "absorb renderer, NN or product semantics", "claim codec/image support from repository creation"]
+}
