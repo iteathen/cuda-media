@@ -18,10 +18,10 @@ Select one concrete consumer-backed lane—image or video—and accept the small
 
 Generic Tensor mathematics stays in CUDA-JS-Tensor. CUDA-JS owns native memory/graphics/media-provider/resource mechanisms. Model/computer-vision semantics remain product-owned unless a future reusable NN layer is independently reactivated; renderer/window/swapchain/product policy stays external.
 
-Generic cross-domain physical memory-management policy does not become CUDA-MEDIA-owned merely because media pipelines buffer frames.
+`iteathen/CUDA-MM` is now the accepted **reserved architecture/ownership home** for reusable cross-domain physical memory-management policy. It is not a current CUDA-MEDIA dependency: CUDA-MM #3/#4 and a separately accepted bounded contract must activate production first. CUDA-MEDIA retains image/frame/pixel/codec semantics and media-specific buffer/lifetime requirements; generic placement/pooling/spill/migration strategy may route to CUDA-MM only after activation.
 
 ## Governance
 
 Protected-main and repository-setting alignment is complete. No local CI workflow currently exists, so no required status-check name is fabricated.
 
-No roadmap entry, provider availability, repository creation or completed governance bootstrap is production implementation authority.
+No roadmap entry, provider availability, CUDA-MM repository existence or completed governance bootstrap is production implementation authority.
