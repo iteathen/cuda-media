@@ -1,11 +1,23 @@
-# cuda-media
+# CUDA-MEDIA
 
-Reusable GPU image/frame/video/codec-pipeline semantics above CUDA-JS mechanisms.
+CUDA-MEDIA is a planned JavaScript library for reusable GPU image and video processing in the CUDA-JS ecosystem, intended for developers building GPU applications.
 
-**Status:** architecture/governance bootstrap; production implementation not authorized.
+## Current state
 
-CUDA-MEDIA owns media meaning. CUDA-JS owns native NPP/nvJPEG/NVENC/NVDEC provider mechanisms; CUDA-JS-Tensor retains generic tensor mathematics.
+This repository currently contains the project charter, architecture decision, development guidance, and planning records. **There is no production implementation, installable package, or public API yet.** No native-provider support or performance is claimed.
 
-Tracking: #1 ownership/bootstrap, #2 repository controls, #3 independently activatable image and video roadmap lanes.
+## Intended scope
 
-No package/API/provider/support/performance claim exists yet.
+The library aims to define image/frame formats, image transformations, and bounded video encode/decode pipelines through public CUDA-JS contracts.
+
+Rendering applications and computer-vision models remain outside this library. CUDA-JS supplies native provider mechanisms and CUDA-JS-Tensor supplies generic mathematics. Image and video work can proceed independently.
+
+Implementation depends on a concrete consumer need and an accepted specification. The [activation roadmap](https://github.com/iteathen/cuda-media/issues/3) describes candidate work; it is not a commitment that every proposed capability will ship.
+
+## Start here
+
+- [Current status](STATUS.md).
+- [Project charter](docs/PROJECT_CHARTER.md) and [documentation](docs/README.md).
+- [Development instructions](AGENTS.md) and [shared contribution guide](https://github.com/iteathen/.github/blob/main/CONTRIBUTING.md).
+- [Private security reporting](https://github.com/iteathen/.github/blob/main/SECURITY.md).
+- [License](LICENSE).

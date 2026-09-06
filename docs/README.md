@@ -1,3 +1,10 @@
-# CUDA-MEDIA Documentation
+# CUDA-MEDIA documentation
 
-Charter plus accepted ADRs/specs own durable truth. Issues/roadmaps do not authorize implementation.
+This directory contains the design and planning material for the proposed GPU image and video processing library. Production specifications have not yet been accepted.
+
+- [Project charter](PROJECT_CHARTER.md): purpose, intended scope, and boundaries.
+- [Architecture decisions](decisions/README.md): accepted ownership decisions.
+- [Specifications](specs/README.md): current contract status and requirements before implementation.
+- [Current project state](../STATUS.md): progress and next work.
+
+Roadmaps organize proposed work; accepted decisions and specifications govern their stated scopes.

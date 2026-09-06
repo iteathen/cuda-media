@@ -1,3 +1,7 @@
-# CUDA-MEDIA Architecture Decisions
+# CUDA-MEDIA architecture decisions
 
-- `ADR-0001-independent-media-semantic-owner.md` — media semantic ownership and lower-layer boundary.
+This directory records accepted architectural decisions. Later decisions may supersede earlier ones; retained records explain that history.
+
+- [Independent GPU image and video processing ownership](ADR-0001-independent-media-semantic-owner.md): the library boundary and dependency direction.
+
+See the [specification index](../specs/README.md) before implementing a capability.
