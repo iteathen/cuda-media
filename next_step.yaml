@@ -1,20 +1,29 @@
 {
   "schema_version": 2,
-  "updated": "2026-09-05",
+  "updated": "2026-09-06",
   "status": "architecture_owner_integrated_consumer_activation_gated",
-  "objective": "Keep reusable media semantics separate from generic Tensor math, CUDA provider mechanics and product rendering/model policy.",
-  "authority": ["AGENTS.md", "docs/PROJECT_CHARTER.md", "docs/decisions/ADR-0001-independent-media-semantic-owner.md"],
-  "completed": {"issue": 1, "state": "ownership_bootstrap_integrated"},
+  "objective": "Keep reusable media semantics separate from generic Tensor math, native CUDA/provider mechanisms, cross-domain memory policy and product rendering/model policy.",
+  "authority": [
+    "AGENTS.md",
+    "docs/PROJECT_CHARTER.md",
+    "docs/specs/SPEC-0001-native-boundary-and-js-only-implementation.md",
+    "docs/decisions/ADR-0001-independent-media-semantic-owner.md"
+  ],
+  "completed": {
+    "ownership_bootstrap_issue": 1,
+    "repository_governance_issue": 2,
+    "repository_governance_state": "protected_main_aligned"
+  },
   "current_focus": {
     "issue": 3,
     "status": "consumer_selection_required",
-    "next_action": "Select either one concrete image consumer profile or one concrete video consumer profile now that ownership is integrated. Keep the lanes independent and require an accepted bounded semantic specification before production implementation."
+    "next_action": "Select one concrete image or video consumer profile, keep the lanes independent, and require an accepted bounded semantic specification before production implementation."
   },
-  "parallel_governance": {"issue": 2, "status": "main_unprotected_control_plane_alignment_open"},
   "do_not": [
-    "implement raw media-provider bindings here",
+    "implement raw media-provider or graphics-native bindings here",
     "move generic Tensor math into media",
-    "absorb renderer, NN or product semantics",
+    "absorb renderer or product semantics",
+    "treat a dormant NN layer as current activation evidence",
     "claim codec/image support from repository creation or completed governance"
   ]
 }
