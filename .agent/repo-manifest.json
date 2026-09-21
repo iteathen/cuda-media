@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "repository": "iteathen/cuda-media",
+  "visibility": "public",
+  "default_branch": "main",
+  "canonical": "https://github.com/iteathen/cuda-media",
+  "anonymous_access": {
+    "git": "https://github.com/iteathen/cuda-media.git",
+    "raw_base": "https://raw.githubusercontent.com/iteathen/cuda-media/main/",
+    "zip": "https://codeload.github.com/iteathen/cuda-media/zip/refs/heads/main",
+    "tar_gz": "https://codeload.github.com/iteathen/cuda-media/tar.gz/refs/heads/main"
+  },
+  "entrypoints": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "llm_index": "llms.txt",
+    "access": ".agent/ACCESS.md"
+  },
+  "authentication_required_for_read": false,
+  "api_required_for_read": false
+}
